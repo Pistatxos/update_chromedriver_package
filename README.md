@@ -3,7 +3,7 @@
 
 Comprueba la versión actual del Google Chrome y descarga o actualiza el chromedriver.
 
-*Únicamete para Linux y macos en esta versión 1.0
+*Únicamete para Linux y macos en esta versión 1.1.0
 
 USO:
 - Llamar a la clase y añadir el argumento con la ruta donde se ubica el chromedriver.
@@ -11,3 +11,8 @@ USO:
 - En caso de actualizar renombrará el archivo antiguo para no borrarlo.
 - Por último se descargará la nueva versión si fuese necesario.
 
+Ejemplo importación:
+
+from update_chromedriver.chromedriver_update import UpdateChromedriver
+
+UpdateChromedriver('/ruta_de_la/carpeta_chromedriver/')

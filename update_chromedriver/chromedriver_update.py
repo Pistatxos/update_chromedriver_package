@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+#_*_ coding: utf8 _*_
 
 import shutil
 from lxml import html
@@ -31,7 +33,7 @@ class UpdateChromedriver():
         elif platform.system() == 'Linux':
             command = ['google-chrome', '--version']
             result = run(command, stdout=PIPE, stderr=PIPE, universal_newlines=True)
-            sistem_os = 'linux'
+            sistem_os = 'linux64'
         chrome_version = str(result.stdout).split('Chrome ')[-1].split('.')[0]
         return sistem_os,chrome_version
 
